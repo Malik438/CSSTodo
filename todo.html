@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Layout Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #ff9f9f;
+      text-align: center;
+      line-height: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #ff9f9f;
+      gap: 1rem;
+      line-height: 2rem;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+      gap: 1rem;
+    }
+
+    article {
+      flex: 3;
+      background-color: #87ceeb;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    article section {
+      background-color: #b0e0e6;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5rem;
+      border: 1px solid #ccc;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #d3d3d3;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    aside h3 {
+      background-color: #87ceeb;
+      text-align: center;
+      line-height: 2rem;
+    }
+
+    aside ul {
+      list-style-type: none;
+      border: 1px solid #ccc;
+    }
+
+    aside ul li {
+      line-height: 2rem;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ccc;
+    }
+
+    aside ul li:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      background-color: #ff9f9f;
+      text-align: center;
+      line-height: 2rem;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Malik Issa Hussein Al-Masalmeh</h1>
+</header>
+
+<nav>
+  <a href="#">About Me</a>
+  <a href="#">Skills</a>
+  <a href="#">Projects</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <article>
+    <section>
+      <h2>About Me</h2>
+      <p>My name is Malik Issa Hussein Al-Masalmeh, born in Bethlehem, where I lived for 18 years. I graduated from Birzeit University with a major in Computer Science.</p>
+    </section>
+    <section>
+      <h2>Professional Experience</h2>
+      <p>I interned at Homit as a Flutter developer and at Exalt as a back-end developer using Java. Currently, I am interning as a back-end developer with Jerusalem High Tech Foundry and training as a database engineer.</p>
+    </section>
+    <section>
+      <h2>Current train</h2>
+      <p>I am working on a Hospital Management System as a freelance developer and undergoing training in database concepts, including ACID, indexing, partitioning, and more, using PostgreSQL.</p>
+    </section>
+  </article>
+
+  <aside>
+    <h3>Key Skills</h3>
+    <ul>
+      <li>Java, Spring Boot</li>
+      <li>Flutter Development</li>
+      <li>Database Design and Optimization</li>
+      <li>Problem Solving and Algorithms</li>
+    </ul>
+    <h3>Interests</h3>
+    <ul>
+      <li>Building e-commerce systems</li>
+      <li>Developing exercise and diet recommendation platforms</li>
+      <li>Improving problem-solving skills</li>
+    </ul>
+  </aside>
+</main>
+
+<footer>
+  <p>  Malik Issa Hussein Al-Masalmeh</p>
+</footer>
+</body>
+</html>
